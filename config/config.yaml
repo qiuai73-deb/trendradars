@@ -42,10 +42,10 @@ rss:
 
      # ===== 数据源：从哪些平台抓新闻 =====
 platforms:
-  enabled: true
+  enabled: false
   sources:
     # —— 国内热榜 ——（不想看的删掉对应那几行即可）
-    - id: "toutiao"
+     - id: "toutiao"
       name: "今日头条"
       expected_domain: "toutiao.com"
     - id: "baidu"
