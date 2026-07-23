@@ -27,22 +27,22 @@ rss:
     - id: "Bloomberg"
       name: "彭博社"
       url: "https://news.google.com/rss/search?q=site:bloomberg.com&hl=zh-CN&gl=CN&ceid=US:en"
-     - id: "Wall Street Journal"
+    - id: "Wall Street Journal"
       name: "华尔街日报"
       url: "https://news.google.com/rss/search?q=site:wsj.com&hl=zh-CN&gl=CN&ceid=US:en"
-      - id: "Financial times"
+    - id: "Financial times"
       name: "金融时报"
       url: "https://news.google.com/rss/search?q=site:ft.com&hl=zh-CN&gl=CN&ceid=US:en" 
-      - id: "CNBC"
+    - id: "CNBC"
       name: "CNBC"
       url: "https://news.google.com/rss/search?q=site:CNBC.com&hl=zh-CN&gl=CN&ceid=US:en" 
-      - id: "South China Morning Post"
+    - id: "South China Morning Post"
       name: "南华早报"
       url: "https://news.google.com/rss/search?q=site:scmp.com&hl=zh-CN&gl=CN&ceid=US:en" 
 
      # ===== 数据源：从哪些平台抓新闻 =====
 platforms:
-  enabled: false
+  enabled: true
   sources:
     # —— 国内热榜 ——（不想看的删掉对应那几行即可）
      - id: "toutiao"
@@ -128,7 +128,7 @@ storage:
 
 # ===== AI 功能（没配API Key就关闭） =====
 ai_analysis:
-  enabled: true                      # ✅ 打开AI分析
+  enabled: false                      # ✅ 打开AI分析
 
 ai_translation:
   enabled: false                      # ❌ 关闭AI翻译
