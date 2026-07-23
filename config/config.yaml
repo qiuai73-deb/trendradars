@@ -88,7 +88,7 @@ report:
   mode: "current"                     # current=当前在榜的新闻（推荐）
                                       # daily=当天全部汇总
                                       # incremental=只看新增的
-  display_mode: "keyword"             # 按关键词分组展示
+  display_mode: "platform"            # 按关键词分组展示
   rank_threshold: 5                   # 前5名标红高亮
   max_news_per_keyword: 0             # 0=不限制每个关键词显示几条
 
@@ -100,8 +100,8 @@ filter:
 # ===== 网页上显示哪些区域 =====
 display:
   region_order:                       # 页面从上到下的排列顺序
-    - new_items                       # 1. 新增热点
-    - hotlist                         # 2. 热榜
+    - hotlist                            # 1. 新增热点
+    - new_items                       # 2. 热榜
     - rss                             # 3. RSS订阅
     - standalone                      # 4. 独立展示
     - ai_analysis                     # 5. AI分析
