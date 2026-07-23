@@ -98,12 +98,12 @@ filter:
 
 # ===== 网页上显示哪些区域 =====
 display:
-  region_order:                       # 页面从上到下的排列顺序
-    - rss                           # 1. 新增热点
-    - hotlist                       # 2. 热榜
-    - new_items                      # 3. RSS订阅
-    - standalone                      # 4. 独立展示
-    - ai_analysis                     # 5. AI分析
+  region_order:                        # 页面从上到下的排列顺序
+    - hotlist                          # 1. 新增热点
+    - rss                              # 2. 热榜
+    - new_items                        # 3. RSS订阅
+    - standalone                       # 4. 独立展示
+    - ai_analysis                      # 5. AI分析
   regions:
     hotlist: true                     # ✅ 显示热榜
     new_items: true                   # ✅ 显示新增热点
@@ -131,7 +131,7 @@ ai_analysis:
   enabled: false                      # ✅ 打开AI分析
 
 ai_translation:
-  enabled: false                      # ❌ 关闭AI翻译
+  enabled: true                      # ❌ 关闭AI翻译
 
 # ===== 高级设置 =====
 advanced:
