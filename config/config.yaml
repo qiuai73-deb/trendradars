@@ -8,7 +8,39 @@ schedule:
   enabled: true                       # 开启定时调度
   preset: "morning_evening"           # 全天推送 + 晚间当日汇总（推荐）
 
-# ===== 数据源：从哪些平台抓新闻 =====
+# ===== RSS 订阅（可选，国外资讯） =====
+rss:
+  enabled: true
+  freshness_filter:
+    enabled: true                     # 只抓最近的文章
+    max_age_days: 1                   # 只抓 1 天内的，避免旧闻刷屏
+  feeds:
+    - id: "hacker-news"
+      name: "Hacker News"
+      url: "https://hnrss.org/frontpage"
+    - id: "yahoo-finance"
+      name: "雅虎财经"
+      url: "https://finance.yahoo.com/news/rssindex"
+    - id: "reuters"
+      name: "路透社"
+      url: "https://news.google.com/rss/search?q=site:reuters.com&hl=zh-CN&gl=CN&ceid=US:en"
+    - id: "Bloomberg"
+      name: "彭博社"
+      url: "https://news.google.com/rss/search?q=site:bloomberg.com&hl=zh-CN&gl=CN&ceid=US:en"
+     - id: "Wall Street Journal"
+      name: "华尔街日报"
+      url: "https://news.google.com/rss/search?q=site:wsj.com&hl=zh-CN&gl=CN&ceid=US:en"
+      - id: "Financial times"
+      name: "金融时报"
+      url: "https://news.google.com/rss/search?q=site:ft.com&hl=zh-CN&gl=CN&ceid=US:en" 
+      - id: "CNBC"
+      name: "CNBC"
+      url: "https://news.google.com/rss/search?q=site:CNBC.com&hl=zh-CN&gl=CN&ceid=US:en" 
+      - id: "South China Morning Post"
+      name: "南华早报"
+      url: "https://news.google.com/rss/search?q=site:scmp.com&hl=zh-CN&gl=CN&ceid=US:en" 
+
+     # ===== 数据源：从哪些平台抓新闻 =====
 platforms:
   enabled: true
   sources:
@@ -47,40 +79,7 @@ platforms:
       expected_domain: "thepaper.cn"
     - id: "ifeng"
       name: "凤凰网"
-      expected_domain: "ifeng.com"
-
-# ===== RSS 订阅（可选，国外资讯） =====
-rss:
-  enabled: true
-  freshness_filter:
-    enabled: true                     # 只抓最近的文章
-    max_age_days: 1                   # 只抓 1 天内的，避免旧闻刷屏
-  feeds:
-    - id: "hacker-news"
-      name: "Hacker News"
-      url: "https://hnrss.org/frontpage"
-    - id: "yahoo-finance"
-      name: "雅虎财经"
-      url: "https://finance.yahoo.com/news/rssindex"
-    - id: "reuters"
-      name: "路透社"
-      url: "https://news.google.com/rss/search?q=site:reuters.com&hl=zh-CN&gl=CN&ceid=US:en"
-    - id: "Bloomberg"
-      name: "彭博社"
-      url: "https://news.google.com/rss/search?q=site:bloomberg.com&hl=zh-CN&gl=CN&ceid=US:en"
-     - id: "Wall Street Journal"
-      name: "华尔街日报"
-      url: "https://news.google.com/rss/search?q=site:wsj.com&hl=zh-CN&gl=CN&ceid=US:en"
-      - id: "Financial times"
-      name: "金融时报"
-      url: "https://news.google.com/rss/search?q=site:ft.com&hl=zh-CN&gl=CN&ceid=US:en" 
-      - id: "CNBC"
-      name: "CNBC"
-      url: "https://news.google.com/rss/search?q=site:CNBC.com&hl=zh-CN&gl=CN&ceid=US:en" 
-      - id: "South China Morning Post"
-      name: "南华早报"
-      url: "https://news.google.com/rss/search?q=site:scmp.com&hl=zh-CN&gl=CN&ceid=US:en" 
-      
+      expected_domain: "ifeng.com" 
       
 
 # ===== 报告模式 =====
@@ -100,9 +99,9 @@ filter:
 # ===== 网页上显示哪些区域 =====
 display:
   region_order:                       # 页面从上到下的排列顺序
-    - hotlist                            # 1. 新增热点
-    - new_items                       # 2. 热榜
-    - rss                             # 3. RSS订阅
+    - rss                           # 1. 新增热点
+    - hotlist                       # 2. 热榜
+    - new_items                      # 3. RSS订阅
     - standalone                      # 4. 独立展示
     - ai_analysis                     # 5. AI分析
   regions:
