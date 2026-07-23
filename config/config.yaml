@@ -45,7 +45,7 @@ platforms:
   enabled: true
   sources:
     # —— 国内热榜 ——（不想看的删掉对应那几行即可）
-     - id: "toutiao"
+    - id: "toutiao"
       name: "今日头条"
       expected_domain: "toutiao.com"
     - id: "baidu"
