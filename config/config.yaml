@@ -47,24 +47,12 @@ platforms:
     - id: "toutiao"
       name: "今日头条"
       expected_domain: "toutiao.com"
-    - id: "baidu"
-      name: "百度热搜"
-      expected_domain: "baidu.com"
     - id: "weibo"
       name: "微博"
       expected_domain: "weibo.com"
-    - id: "zhihu"
-      name: "知乎"
-      expected_domain: "zhihu.com"
     - id: "douyin"
       name: "抖音"
       expected_domain: "douyin.com"
-    - id: "bilibili-hot-search"
-      name: "bilibili 热搜"
-      expected_domain: "bilibili.com"
-    - id: "tieba"
-      name: "贴吧"
-      expected_domain: "baidu.com"
     # —— 财经新闻 ——
     - id: "wallstreetcn-hot"
       name: "华尔街见闻"
@@ -98,11 +86,11 @@ filter:
 # ===== 网页上显示哪些区域 =====
 display:
   region_order:                        # 页面从上到下的排列顺序
-    - hotlist                          # 1. 新增热点
-    - rss                              # 2. 热榜
-    - new_items                        # 3. RSS订阅
-    - standalone                       # 4. 独立展示
-    - ai_analysis                      # 5. AI分析
+    - rss                              # 1. 新增热点
+    - hotlist                          # 2. 热榜
+#   - new_items                        # 3. RSS订阅
+#   - standalone                       # 4. 独立展示
+#   - ai_analysis                      # 5. AI分析
   regions:
     hotlist: true                     # ✅ 显示热榜
     new_items: false                  # ✅ 显示新增热点
