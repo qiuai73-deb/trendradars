@@ -72,7 +72,7 @@ def render_html_content(
             }
 
             .container {
-                max-width: 1800px;
+                max-width: none;
                 margin: 0 auto;
                 background: white;
                 border-radius: 12px;
