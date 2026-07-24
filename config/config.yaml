@@ -83,7 +83,7 @@ platforms:
 
 # ===== 报告模式 =====
 report:
-  mode: "current"                     # current=当前在榜的新闻（推荐）
+  mode: "daily"                       # current=当前在榜的新闻（推荐）
                                       # daily=当天全部汇总
                                       # incremental=只看新增的
   display_mode: "platform"            # 按关键词分组展示
@@ -105,7 +105,7 @@ display:
     - ai_analysis                      # 5. AI分析
   regions:
     hotlist: true                     # ✅ 显示热榜
-    new_items: true                   # ✅ 显示新增热点
+    new_items: false                  # ✅ 显示新增热点
     rss: true                         # ✅ 显示RSS
     standalone: false                 # ❌ 关闭独立展示区
     ai_analysis: false                # ❌ 关闭AI分析（没配API Key时必须关）
