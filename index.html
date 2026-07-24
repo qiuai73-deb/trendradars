@@ -18,7 +18,7 @@
             }
 
             .container {
-                max-width: 600px;
+                max-width: 1800px;
                 margin: 0 auto;
                 background: white;
                 border-radius: 12px;
@@ -557,7 +557,7 @@
                 color: #374151;
             }
 
-            @media (max-width: 480px) {
+            @media (max-width: 1800px) {
                 body { padding: 12px; }
                 .header { padding: 24px 20px; }
                 .content { padding: 20px; }
@@ -610,11 +610,11 @@
             }
 
             .feed-group {
-                margin-bottom: 24px;
+                margin-bottom: 12px;
             }
 
             .feed-group:last-child {
-                margin-bottom: 0;
+                margin-bottom: 12px;
             }
 
             .feed-header {
@@ -837,17 +837,18 @@
             /* ===== 浏览器增强样式（渐进增强，邮件客户端无影响） ===== */
 
             /* 宽屏模式 - 基础 */
-            body.wide-mode .container { max-width: 1200px; }
+            body.wide-mode .container { max-width: 1800px; }
             body.wide-mode .header-info { grid-template-columns: repeat(4, 1fr); }
             body.wide-mode .content { padding: 32px 40px; }
 
             /* 宽屏模式 - RSS feed-group 两列 */
             body.wide-mode .rss-feeds-grid {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 24px;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 16px;
+                align-items: start;
             }
-            body.wide-mode .feed-group { margin-bottom: 0; }
+            body.wide-mode .feed-group { margin-bottom: 12px; }
 
             /* 宽屏模式 - AI 分析区两列网格 */
             body.wide-mode .ai-section .ai-blocks-grid {
@@ -1383,15 +1384,15 @@
                     </div>
                     <div class="info-item">
                         <span class="info-label">生成时间</span>
-                        <span class="info-value">07-24 13:36</span>
+                        <span class="info-value">07-24 14:25</span>
                     </div>
                     <div class="info-item">
                         <span class="info-label">热榜命中</span>
-                        <span class="info-value">22 / 255</span>
+                        <span class="info-value">23 / 255</span>
                     </div>
                     <div class="info-item">
                         <span class="info-label">RSS 命中</span>
-                        <span class="info-value">4 / 28</span>
+                        <span class="info-value">3 / 26</span>
                     </div>
                     <div class="info-item">
                         <span class="info-label">热榜平台</span>
@@ -1403,7 +1404,7 @@
                     </div>
                     <div class="info-item">
                         <span class="info-label">新增热点</span>
-                        <span class="info-value">22 + 4</span>
+                        <span class="info-value">23 + 3</span>
                     </div>
                     <div class="info-item">
                         <span class="info-label">AI 分析</span>
@@ -1416,7 +1417,7 @@
                 <div class="search-bar">
                     <input type="text" class="search-input" placeholder="搜索新闻标题..." oninput="handleSearch(this.value)">
                 </div>
-                <div class="hotlist-section"><div class="tab-bar-wrapper"><div class="tab-bar"><button class="tab-btn" data-tab-index="all">全部<span class="tab-count">22</span></button><button class="tab-btn" data-tab-index="0">澎湃新闻<span class="tab-count">5</span></button><button class="tab-btn" data-tab-index="1">凤凰网<span class="tab-count">4</span></button><button class="tab-btn" data-tab-index="2">今日头条<span class="tab-count">4</span></button><button class="tab-btn" data-tab-index="3">知乎<span class="tab-count">3</span></button><button class="tab-btn" data-tab-index="4">贴吧<span class="tab-count">2</span></button><button class="tab-btn" data-tab-index="5">百度热搜<span class="tab-count">1</span></button><button class="tab-btn" data-tab-index="6">抖音<span class="tab-count">1</span></button><button class="tab-btn" data-tab-index="7">财联社热门<span class="tab-count">1</span></button><button class="tab-btn" data-tab-index="8">bilibili 热搜<span class="tab-count">1</span></button></div></div>
+                <div class="hotlist-section"><div class="tab-bar-wrapper"><div class="tab-bar"><button class="tab-btn" data-tab-index="all">全部<span class="tab-count">23</span></button><button class="tab-btn" data-tab-index="0">澎湃新闻<span class="tab-count">5</span></button><button class="tab-btn" data-tab-index="1">知乎<span class="tab-count">4</span></button><button class="tab-btn" data-tab-index="2">凤凰网<span class="tab-count">4</span></button><button class="tab-btn" data-tab-index="3">今日头条<span class="tab-count">4</span></button><button class="tab-btn" data-tab-index="4">贴吧<span class="tab-count">2</span></button><button class="tab-btn" data-tab-index="5">百度热搜<span class="tab-count">1</span></button><button class="tab-btn" data-tab-index="6">微博<span class="tab-count">1</span></button><button class="tab-btn" data-tab-index="7">抖音<span class="tab-count">1</span></button><button class="tab-btn" data-tab-index="8">财联社热门<span class="tab-count">1</span></button></div></div>
                 <div class="word-group" data-tab-index="0">
                     <div class="word-header">
                         <div class="word-info">
@@ -1428,7 +1429,7 @@
                     <div class="news-item new">
                         <div class="news-number">1</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="rank-num top">2</span><span class="time-info">13:35</span>
+                            <div class="news-header"><span class="rank-num top">2</span><span class="time-info">14:24</span>
                             </div>
                             <div class="news-title"><a href="https://m.thepaper.cn/newsDetail_forward_33645576" target="_blank" class="news-link">中国数学家王虹、邓煜双双获得菲尔兹奖，均系北大校友</a>
                             </div>
@@ -1437,7 +1438,7 @@
                     <div class="news-item new">
                         <div class="news-number">2</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="rank-num top">3</span><span class="time-info">13:35</span>
+                            <div class="news-header"><span class="rank-num top">3</span><span class="time-info">14:24</span>
                             </div>
                             <div class="news-title"><a href="https://m.thepaper.cn/newsDetail_forward_33647071" target="_blank" class="news-link">王虹、邓煜获菲尔兹奖，中国数学实现历史性突破</a>
                             </div>
@@ -1446,7 +1447,7 @@
                     <div class="news-item new">
                         <div class="news-number">3</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="rank-num high">4</span><span class="time-info">13:35</span>
+                            <div class="news-header"><span class="rank-num high">4</span><span class="time-info">14:24</span>
                             </div>
                             <div class="news-title"><a href="https://m.thepaper.cn/newsDetail_forward_33642292" target="_blank" class="news-link">从北大同窗同获菲尔兹奖，看中国数学家的百年跃迁</a>
                             </div>
@@ -1455,7 +1456,7 @@
                     <div class="news-item new">
                         <div class="news-number">4</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">6</span><span class="time-info">13:35</span>
+                            <div class="news-header"><span class="rank-num high">5</span><span class="time-info">14:24</span>
                             </div>
                             <div class="news-title"><a href="https://m.thepaper.cn/newsDetail_forward_33647751" target="_blank" class="news-link">马上评｜久等了，菲尔兹奖的中国时刻！</a>
                             </div>
@@ -1464,7 +1465,7 @@
                     <div class="news-item new">
                         <div class="news-number">5</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">12</span><span class="time-info">13:35</span>
+                            <div class="news-header"><span class="rank-num ">12</span><span class="time-info">14:24</span>
                             </div>
                             <div class="news-title"><a href="https://m.thepaper.cn/newsDetail_forward_33644764" target="_blank" class="news-link">击败强敌！中国女排3比2胜美国女排，闯进世界女排联赛四强</a>
                             </div>
@@ -1474,7 +1475,7 @@
                 <div class="word-group" data-tab-index="1">
                     <div class="word-header">
                         <div class="word-info">
-                            <div class="word-name">凤凰网</div>
+                            <div class="word-name">知乎</div>
                             <div class="word-count ">4 条</div>
                         </div>
                         <div class="word-index"><span class="collapse-icon">▼</span>2/9</div>
@@ -1482,97 +1483,7 @@
                     <div class="news-item new">
                         <div class="news-number">1</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="rank-num high">4</span><span class="time-info">13:35</span>
-                            </div>
-                            <div class="news-title"><a href="https://news.ifeng.com/c/8v0wK30oyaF" target="_blank" class="news-link">中国2艘油轮成功离开沙特</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-item new">
-                        <div class="news-number">2</div>
-                        <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">6</span><span class="time-info">13:35</span>
-                            </div>
-                            <div class="news-title"><a href="https://news.ifeng.com/c/8v0zX6TgFdS" target="_blank" class="news-link">中国—东盟外长发表有关中东局势的联合声明</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-item new">
-                        <div class="news-number">3</div>
-                        <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">9</span><span class="time-info">13:35</span>
-                            </div>
-                            <div class="news-title"><a href="https://news.ifeng.com/c/8uzcXG8YK32" target="_blank" class="news-link">中国AI大反超，美国还能挡多久？</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-item new">
-                        <div class="news-number">4</div>
-                        <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">10</span><span class="time-info">13:35</span>
-                            </div>
-                            <div class="news-title"><a href="https://news.ifeng.com/c/8v142IG9aOe" target="_blank" class="news-link">美著名“中国通”：面对中国，美国有一种心理上的失落</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="word-group" data-tab-index="2">
-                    <div class="word-header">
-                        <div class="word-info">
-                            <div class="word-name">今日头条</div>
-                            <div class="word-count ">4 条</div>
-                        </div>
-                        <div class="word-index"><span class="collapse-icon">▼</span>3/9</div>
-                    </div>
-                    <div class="news-item new">
-                        <div class="news-number">1</div>
-                        <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">7</span><span class="time-info">13:35</span>
-                            </div>
-                            <div class="news-title"><a href="https://www.toutiao.com/trending/7665920905507245587/" target="_blank" class="news-link">日本舆论如何看中国学者获菲尔兹奖</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-item new">
-                        <div class="news-number">2</div>
-                        <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">24</span><span class="time-info">13:35</span>
-                            </div>
-                            <div class="news-title"><a href="https://www.toutiao.com/trending/7664875358533075007/" target="_blank" class="news-link">外交部：中国外长没有与日方会见安排</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-item new">
-                        <div class="news-number">3</div>
-                        <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">28</span><span class="time-info">13:35</span>
-                            </div>
-                            <div class="news-title"><a href="https://www.toutiao.com/trending/7665722221507169830/" target="_blank" class="news-link">2名中国籍数学家获菲尔兹奖</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-item new">
-                        <div class="news-number">4</div>
-                        <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">29</span><span class="time-info">13:35</span>
-                            </div>
-                            <div class="news-title"><a href="https://www.toutiao.com/trending/7665446304811024403/" target="_blank" class="news-link">中国男篮今战喀麦隆男篮</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="word-group" data-tab-index="3">
-                    <div class="word-header">
-                        <div class="word-info">
-                            <div class="word-name">知乎</div>
-                            <div class="word-count ">3 条</div>
-                        </div>
-                        <div class="word-index"><span class="collapse-icon">▼</span>4/9</div>
-                    </div>
-                    <div class="news-item new">
-                        <div class="news-number">1</div>
-                        <div class="news-content">
-                            <div class="news-header"><span class="rank-num top">2</span><span class="time-info">13:35</span>
+                            <div class="news-header"><span class="rank-num top">2</span><span class="time-info">14:24</span>
                             </div>
                             <div class="news-title"><a href="https://www.zhihu.com/question/2061502500440465960" target="_blank" class="news-link">2026 年菲尔兹奖公布，中国籍数学家邓煜、王虹获奖，如何理解他们获奖的意义？</a>
                             </div>
@@ -1581,18 +1492,117 @@
                     <div class="news-item new">
                         <div class="news-number">2</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">10</span><span class="time-info">13:35</span>
+                            <div class="news-header"><span class="rank-num ">8</span><span class="time-info">14:24</span>
                             </div>
-                            <div class="news-title"><a href="https://www.zhihu.com/question/2063747700022048622" target="_blank" class="news-link">王虹、邓煜获「菲尔兹奖」，这是中国籍数学家首次获得该奖，获得这个奖有多难？他们攻克了什么数学难题？</a>
+                            <div class="news-title"><a href="https://www.zhihu.com/question/2062972338451362703" target="_blank" class="news-link">王虹、邓煜两位中国数学家首获菲尔兹奖，具有怎样里程碑式的意义？对中国数学意味着什么？</a>
                             </div>
                         </div>
                     </div>
                     <div class="news-item new">
                         <div class="news-number">3</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">18</span><span class="time-info">13:35</span>
+                            <div class="news-header"><span class="rank-num ">14</span><span class="time-info">14:24</span>
                             </div>
                             <div class="news-title"><a href="https://www.zhihu.com/question/2063288280146351339" target="_blank" class="news-link">耐克宣布自明年 1 月起清退中国数千家在线经销商，对国内市场有什么影响？会冲击实体商户吗？</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">4</div>
+                        <div class="news-content">
+                            <div class="news-header"><span class="rank-num ">17</span><span class="time-info">14:24</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.zhihu.com/question/2063747700022048622" target="_blank" class="news-link">王虹、邓煜获「菲尔兹奖」，这是中国籍数学家首次获得该奖，获得这个奖有多难？他们攻克了什么数学难题？</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="word-group" data-tab-index="2">
+                    <div class="word-header">
+                        <div class="word-info">
+                            <div class="word-name">凤凰网</div>
+                            <div class="word-count ">4 条</div>
+                        </div>
+                        <div class="word-index"><span class="collapse-icon">▼</span>3/9</div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">1</div>
+                        <div class="news-content">
+                            <div class="news-header"><span class="rank-num high">4</span><span class="time-info">14:24</span>
+                            </div>
+                            <div class="news-title"><a href="https://news.ifeng.com/c/8v0wK30oyaF" target="_blank" class="news-link">中国2艘油轮成功离开沙特</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">2</div>
+                        <div class="news-content">
+                            <div class="news-header"><span class="rank-num ">6</span><span class="time-info">14:24</span>
+                            </div>
+                            <div class="news-title"><a href="https://news.ifeng.com/c/8v0zX6TgFdS" target="_blank" class="news-link">中国—东盟外长发表有关中东局势的联合声明</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">3</div>
+                        <div class="news-content">
+                            <div class="news-header"><span class="rank-num ">9</span><span class="time-info">14:24</span>
+                            </div>
+                            <div class="news-title"><a href="https://news.ifeng.com/c/8uzcXG8YK32" target="_blank" class="news-link">中国AI大反超，美国还能挡多久？</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">4</div>
+                        <div class="news-content">
+                            <div class="news-header"><span class="rank-num ">10</span><span class="time-info">14:24</span>
+                            </div>
+                            <div class="news-title"><a href="https://news.ifeng.com/c/8v142IG9aOe" target="_blank" class="news-link">美著名“中国通”：面对中国，美国有一种心理上的失落</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="word-group" data-tab-index="3">
+                    <div class="word-header">
+                        <div class="word-info">
+                            <div class="word-name">今日头条</div>
+                            <div class="word-count ">4 条</div>
+                        </div>
+                        <div class="word-index"><span class="collapse-icon">▼</span>4/9</div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">1</div>
+                        <div class="news-content">
+                            <div class="news-header"><span class="rank-num ">7</span><span class="time-info">14:24</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.toutiao.com/trending/7665608122941050431/" target="_blank" class="news-link">中国AI大反超 美国还能挡多久</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">2</div>
+                        <div class="news-content">
+                            <div class="news-header"><span class="rank-num ">8</span><span class="time-info">14:24</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.toutiao.com/trending/7665920905507245587/" target="_blank" class="news-link">日本舆论如何看中国学者获菲尔兹奖</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">3</div>
+                        <div class="news-content">
+                            <div class="news-header"><span class="rank-num ">21</span><span class="time-info">14:24</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.toutiao.com/trending/7665722221507169830/" target="_blank" class="news-link">2名中国籍数学家获菲尔兹奖</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">4</div>
+                        <div class="news-content">
+                            <div class="news-header"><span class="rank-num ">26</span><span class="time-info">14:24</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.toutiao.com/trending/7664875358533075007/" target="_blank" class="news-link">外交部：中国外长没有与日方会见安排</a>
                             </div>
                         </div>
                     </div>
@@ -1608,7 +1618,7 @@
                     <div class="news-item new">
                         <div class="news-number">1</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">6</span><span class="time-info">13:35</span>
+                            <div class="news-header"><span class="rank-num ">6</span><span class="time-info">14:24</span>
                             </div>
                             <div class="news-title"><a href="https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%9C%B8%E6%A6%9C%2C%E6%97%A5%E6%9C%AC%E7%A0%B4%E9%98%B2&amp;topic_id=28356460" target="_blank" class="news-link">中国机器人霸榜,日本破防</a>
                             </div>
@@ -1617,7 +1627,7 @@
                     <div class="news-item new">
                         <div class="news-number">2</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">8</span><span class="time-info">13:35</span>
+                            <div class="news-header"><span class="rank-num ">8</span><span class="time-info">14:24</span>
                             </div>
                             <div class="news-title"><a href="https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E7%AA%81%E7%A0%B4%21%E4%B8%AD%E5%9B%BD%E6%95%B0%E5%AD%A6%E5%AE%B6%E9%A6%96%E8%8E%B7%E8%8F%B2%E5%B0%94%E5%85%B9%E5%A5%96&amp;topic_id=28356453" target="_blank" class="news-link">突破!中国数学家首获菲尔兹奖</a>
                             </div>
@@ -1635,7 +1645,7 @@
                     <div class="news-item new">
                         <div class="news-number">1</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="rank-num top">3</span><span class="time-info">13:35</span>
+                            <div class="news-header"><span class="rank-num top">3</span><span class="time-info">14:24</span>
                             </div>
                             <div class="news-title"><a href="https://www.baidu.com/s?wd=%E4%B8%AD%E5%9B%BD%E6%B1%BD%E8%BD%A6%E5%8A%A0%E9%80%9F%E5%85%A8%E7%90%83%E5%8C%96%E5%B8%83%E5%B1%80" target="_blank" class="news-link">中国汽车加速全球化布局</a>
                             </div>
@@ -1645,7 +1655,7 @@
                 <div class="word-group" data-tab-index="6">
                     <div class="word-header">
                         <div class="word-info">
-                            <div class="word-name">抖音</div>
+                            <div class="word-name">微博</div>
                             <div class="word-count ">1 条</div>
                         </div>
                         <div class="word-index"><span class="collapse-icon">▼</span>7/9</div>
@@ -1653,9 +1663,9 @@
                     <div class="news-item new">
                         <div class="news-number">1</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">9</span><span class="time-info">13:35</span>
+                            <div class="news-header"><span class="rank-num ">7</span><span class="time-info">14:24</span>
                             </div>
-                            <div class="news-title"><a href="https://www.douyin.com/hot/2582531" target="_blank" class="news-link">保罗乔治抵达中国</a>
+                            <div class="news-title"><a href="https://s.weibo.com/weibo?q=%E5%8D%B0%E5%BA%A6%E5%8D%9A%E4%B8%BB%E7%A9%B7%E6%B8%B8%E4%B8%AD%E5%9B%BD&amp;t=31&amp;band_rank=7&amp;Refer=top" target="_blank" class="news-link">印度博主穷游中国</a>
                             </div>
                         </div>
                     </div>
@@ -1663,7 +1673,7 @@
                 <div class="word-group" data-tab-index="7">
                     <div class="word-header">
                         <div class="word-info">
-                            <div class="word-name">财联社热门</div>
+                            <div class="word-name">抖音</div>
                             <div class="word-count ">1 条</div>
                         </div>
                         <div class="word-index"><span class="collapse-icon">▼</span>8/9</div>
@@ -1671,9 +1681,9 @@
                     <div class="news-item new">
                         <div class="news-number">1</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">13</span><span class="time-info">13:35</span>
+                            <div class="news-header"><span class="rank-num ">8</span><span class="time-info">14:24</span>
                             </div>
-                            <div class="news-title"><a href="https://www.cls.cn/detail/2435551" target="_blank" class="news-link">王虹、邓煜获菲尔兹奖 中国数学实现历史性突破</a>
+                            <div class="news-title"><a href="https://www.douyin.com/hot/2582531" target="_blank" class="news-link">保罗乔治抵达中国</a>
                             </div>
                         </div>
                     </div>
@@ -1681,7 +1691,7 @@
                 <div class="word-group" data-tab-index="8">
                     <div class="word-header">
                         <div class="word-info">
-                            <div class="word-name">bilibili 热搜</div>
+                            <div class="word-name">财联社热门</div>
                             <div class="word-count ">1 条</div>
                         </div>
                         <div class="word-index"><span class="collapse-icon">▼</span>9/9</div>
@@ -1689,9 +1699,9 @@
                     <div class="news-item new">
                         <div class="news-number">1</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="rank-num ">29</span><span class="time-info">13:35</span>
+                            <div class="news-header"><span class="rank-num ">13</span><span class="time-info">14:24</span>
                             </div>
-                            <div class="news-title"><a href="https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%9B%BD%E6%95%B0%E5%AD%A6%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84%E9%87%8D%E5%A4%A7%E7%AA%81%E7%A0%B4" target="_blank" class="news-link">中国数学如何实现的重大突破</a>
+                            <div class="news-title"><a href="https://www.cls.cn/detail/2435551" target="_blank" class="news-link">王虹、邓煜获菲尔兹奖 中国数学实现历史性突破</a>
                             </div>
                         </div>
                     </div>
@@ -1700,13 +1710,13 @@
                 <div class="section-divider rss-section">
                     <div class="rss-section-header">
                         <div class="rss-section-title">RSS 订阅更新</div>
-                        <div class="rss-section-count">4 条</div>
+                        <div class="rss-section-count">3 条</div>
                     </div>
                     <div class="rss-feeds-grid">
                     <div class="feed-group">
                         <div class="feed-header">
-                            <div class="feed-name">China / Chinese / 中国 / 宁波</div>
-                            <div class="feed-count">4 条</div>
+                            <div class="feed-name">股市 A股 沪深 创业板 科创板 / ETF / China / Chinese / 中国 / 宁波</div>
+                            <div class="feed-count">3 条</div>
                         </div>
                         <div class="rss-item">
                             <div class="rss-meta"><span class="rss-time">07-24 07:53</span><span class="rss-author">华尔街日报</span><span class="rss-author" style="color: #dc2626;">NEW</span>
@@ -1724,12 +1734,6 @@
                             <div class="rss-meta"><span class="rss-time">07-23 18:24</span><span class="rss-author">南华早报</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
                             <div class="rss-title"><a href="https://news.google.com/rss/articles/CBMivw1BVV95cUxQbzVucWpLR1ZZM3ZOUEVCTGktRk1pNXJtX0NzUTZiYmlISHZIcktwSlVtRlJ1eV9NUXhVMHhpYlRDOVZ2M3Etc1JtMk5tX3EyS3hhSGNzbURwRy1Ub2lDblpKNlQyS0xZeHVBOWxqbHJwdzdPVHdsdHdnYmxWLVBVbWRxR0lfY0VrWnh2elpvV004LWdtc0dDZDNxak1DZ1RJOHlWekpfV081dDRhdkQ5TUlqeTRiaGFvQV9vRUJfNTZNYjVpVlNITUszOFhuTlh0c0Z4dEY2XzQtQ2dSVUFkS3I5VjJROW81LUZINzdsWFhLV1RPcEZ2N1VkNnNwamhWcUNFWXFZX3pCREhobU1zZUQyQWx5Tko3R1lEWlAxRzhLQlZIdE9yUXhPZmowODdoUjlfQXZKQkc0TC1ZZ3dBNXBuWHg3Yy05ak9uVGgxNm1BMnZBdldPRFlIRDljdEgzcmtDQzdOcmlfTVI4MGVXRVZRdGg5RFFKXzdDLWdKbFBLdmJvY0tGQkdWdDhibDFsR0dZMlprR3RnVGhjNURJaXZNZFZUVklHWkk5TFRPSkozTFhseF9QR3BkcmtmUWdEMW1vSDhpTGF0bDM1YVVUR3ZDaDgwaFM4blU1Q3VhSk11VzlQakh2LXlkdF93SXo5a2YxcnVhTU9TeFpaOV8tV3I5bmxCU1prbGtSS3djZ21kMDhpa25UT3l3Nm50TGl3cUxTbDRrcDRjamJpVEJINGhsZGF5X3REdjJ5UG5tOEJZdG5DdGpvbThIWGpfc2JuSkNJM2hRZExVWjNUajQxODhLMzJWT0taUjREemgyR3pLZktLeUsxY2dJTFprbFdTRjliRnBUdEU0NWM5Wm9wS0VHM3lXSEpCZW5yMUxTOW1walhFVlhDWUo4ckV1NzZya2dsdUNRMDQ3cHJWWWptTE5JMnozbThscWVlTXYzLTFmTUpLa3ZjS1VLZG1CV0RzSXRUaGxIZi0xNXdoWU5CQnZReXl5cVd4OGZ5YUphSzJpV0w2RzBSZ0FvZ2JjODl0Sk9RRnowVUNlNzljWjFXWWV2S2xTTTdpQlpUc2lXdnNoNVBnUUZkdWl0ellRdUlTMnlfUm5wcmFBdVFNcmwwMERjQWFlejQ3MWhqWnFXcFFZXzBabGgtOFB0eVF5M05JSm1PUVVOdk9qbUZLd2w1R1JVaFNyWUVRU3d4d0FTS2dpNVc1bnBPMU9LT05ZaTdxeThwNS1UbFdUdG5LWWJJZ1d2Rlk0aXlRSTZSUEJ6c1g4cFRyTWhUTWxRY0poalMxaW5tLVpoajhVNzF4YnpQR2JwMXBTZUw0S1AxaW94dV9kd29tQ2RxcEx3T0ZvbnZrVDFnOXlPcURYUnNtU2ZTbWFmRmRaOU9JMTktSU56NUdTazBJNUhVWXNoUE1vQlh5VVpHMTNxY29Ta3BHSEFWa05UcGQzXzJqVmpHNGM3b1JsUnpkVjRZRVk4cUhWeEhUVWJ4RnFrYXBfSDNmaFpnd25sRTIxTHA5eGJZY2Yxb2R1ZFBZOTdnNzg2R2RUb1NfbTRVbE9IV1FYclc0YnJocUdGOU5vemhuaXRHZFlndHpLRlQ2cFEtSnVMSTV5b2VTdWU3ZGFtWVNWSHFJTURVcjMzRnZEN3NkSkQzVHZTOUNOUDY3LVNuUW5xYnRJMzJla2ZmbTI5cmtCdW9GcVlOVi05dUx0S0pyOU9lWEhmaTFPdFpBWTcyUWphQ3N4eEdPN29MZE5mRkx3cUJ6Uk1Da0hZOFhOUlc5WWRFcE1leUVkQjVvYjY4Y1pockpfak1IRG1hT3FBTTc0WkhCUDRUYW1iQmdiU1ZDOU9Ick55LWtNSXZsNnNwLWdxWjdsM1hEakpCUXotQVNydGdkbjh0a1FNNjhOTzB2dkdtcmpxcDRpeGYxV3FqVXhjb2dNQkVMbV9iMExiSS1fX3ZSM2dHaVEyVHVabm9WX2dZR2dyNV9nYWVSVmhxMFJnSzNUX0tGaWJlZUF3aGdGN05qREpOY3dwNU9HXzRUdmdJQ1o5OHZRdFE1eThpeE93VDJDQkEyUF9XZzhTM0ZQWTRaejJpOFV1WTZZdnNjZG8yQlpVRVFUdE5LalVoQ1dvRlFtMzVHZGduS3UyM202MUJPY2tjcVZJa2tqNjhlWTVhZVZqOExpcFNrRC1ONU56QVFjNVhWMVZsNDJGeEZWV0l6WHc2YkVVR0ppc2QzbG44WWdreUhHMUpiZ00yMElPQkhXVWNIdm0tNExzVGwzaVNzZzhPTTlvTG1ucG5jT2x0NHFuZw?oc=5" target="_blank" class="rss-link">Search - South China Morning Post</a>
-                            </div>
-                        </div>
-                        <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">07-23 13:45</span><span class="rss-author">华尔街日报</span><span class="rss-author" style="color: #dc2626;">NEW</span>
-                            </div>
-                            <div class="rss-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOeHZTemJrZkItei1pTlJEakwxaWtKV2RuWExxcl8wOFBCQ2lXWWQzSVd3Wk5CcGZvaTVVeldielNDUXNBTnhVV3g2S29sRjc3ekozVUQyLTBtMm5pOUlGNHhTRlg1Yll4eUpLVV9RUWZXOXhXMXpuZUtIOE84bDh3TUlCYmhXMnU2VjdMNEJpS21NVzR6?oc=5" target="_blank" class="rss-link">中国车企欧洲6月销量激增 - 华尔街日报中文网</a>
                             </div>
                         </div>
                     </div>
@@ -1738,13 +1742,13 @@
                 <div class="section-divider rss-section">
                     <div class="rss-section-header">
                         <div class="rss-section-title">RSS 新增更新</div>
-                        <div class="rss-section-count">4 条</div>
+                        <div class="rss-section-count">3 条</div>
                     </div>
                     <div class="rss-feeds-grid">
                     <div class="feed-group">
                         <div class="feed-header">
-                            <div class="feed-name">China / Chinese / 中国 / 宁波</div>
-                            <div class="feed-count">4 条</div>
+                            <div class="feed-name">股市 A股 沪深 创业板 科创板 / ETF / China / Chinese / 中国 / 宁波</div>
+                            <div class="feed-count">3 条</div>
                         </div>
                         <div class="rss-item">
                             <div class="rss-meta"><span class="rss-time">07-24 07:53</span><span class="rss-author">华尔街日报</span><span class="rss-author" style="color: #dc2626;">NEW</span>
@@ -1762,12 +1766,6 @@
                             <div class="rss-meta"><span class="rss-time">07-23 18:24</span><span class="rss-author">南华早报</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
                             <div class="rss-title"><a href="https://news.google.com/rss/articles/CBMivw1BVV95cUxQbzVucWpLR1ZZM3ZOUEVCTGktRk1pNXJtX0NzUTZiYmlISHZIcktwSlVtRlJ1eV9NUXhVMHhpYlRDOVZ2M3Etc1JtMk5tX3EyS3hhSGNzbURwRy1Ub2lDblpKNlQyS0xZeHVBOWxqbHJwdzdPVHdsdHdnYmxWLVBVbWRxR0lfY0VrWnh2elpvV004LWdtc0dDZDNxak1DZ1RJOHlWekpfV081dDRhdkQ5TUlqeTRiaGFvQV9vRUJfNTZNYjVpVlNITUszOFhuTlh0c0Z4dEY2XzQtQ2dSVUFkS3I5VjJROW81LUZINzdsWFhLV1RPcEZ2N1VkNnNwamhWcUNFWXFZX3pCREhobU1zZUQyQWx5Tko3R1lEWlAxRzhLQlZIdE9yUXhPZmowODdoUjlfQXZKQkc0TC1ZZ3dBNXBuWHg3Yy05ak9uVGgxNm1BMnZBdldPRFlIRDljdEgzcmtDQzdOcmlfTVI4MGVXRVZRdGg5RFFKXzdDLWdKbFBLdmJvY0tGQkdWdDhibDFsR0dZMlprR3RnVGhjNURJaXZNZFZUVklHWkk5TFRPSkozTFhseF9QR3BkcmtmUWdEMW1vSDhpTGF0bDM1YVVUR3ZDaDgwaFM4blU1Q3VhSk11VzlQakh2LXlkdF93SXo5a2YxcnVhTU9TeFpaOV8tV3I5bmxCU1prbGtSS3djZ21kMDhpa25UT3l3Nm50TGl3cUxTbDRrcDRjamJpVEJINGhsZGF5X3REdjJ5UG5tOEJZdG5DdGpvbThIWGpfc2JuSkNJM2hRZExVWjNUajQxODhLMzJWT0taUjREemgyR3pLZktLeUsxY2dJTFprbFdTRjliRnBUdEU0NWM5Wm9wS0VHM3lXSEpCZW5yMUxTOW1walhFVlhDWUo4ckV1NzZya2dsdUNRMDQ3cHJWWWptTE5JMnozbThscWVlTXYzLTFmTUpLa3ZjS1VLZG1CV0RzSXRUaGxIZi0xNXdoWU5CQnZReXl5cVd4OGZ5YUphSzJpV0w2RzBSZ0FvZ2JjODl0Sk9RRnowVUNlNzljWjFXWWV2S2xTTTdpQlpUc2lXdnNoNVBnUUZkdWl0ellRdUlTMnlfUm5wcmFBdVFNcmwwMERjQWFlejQ3MWhqWnFXcFFZXzBabGgtOFB0eVF5M05JSm1PUVVOdk9qbUZLd2w1R1JVaFNyWUVRU3d4d0FTS2dpNVc1bnBPMU9LT05ZaTdxeThwNS1UbFdUdG5LWWJJZ1d2Rlk0aXlRSTZSUEJ6c1g4cFRyTWhUTWxRY0poalMxaW5tLVpoajhVNzF4YnpQR2JwMXBTZUw0S1AxaW94dV9kd29tQ2RxcEx3T0ZvbnZrVDFnOXlPcURYUnNtU2ZTbWFmRmRaOU9JMTktSU56NUdTazBJNUhVWXNoUE1vQlh5VVpHMTNxY29Ta3BHSEFWa05UcGQzXzJqVmpHNGM3b1JsUnpkVjRZRVk4cUhWeEhUVWJ4RnFrYXBfSDNmaFpnd25sRTIxTHA5eGJZY2Yxb2R1ZFBZOTdnNzg2R2RUb1NfbTRVbE9IV1FYclc0YnJocUdGOU5vemhuaXRHZFlndHpLRlQ2cFEtSnVMSTV5b2VTdWU3ZGFtWVNWSHFJTURVcjMzRnZEN3NkSkQzVHZTOUNOUDY3LVNuUW5xYnRJMzJla2ZmbTI5cmtCdW9GcVlOVi05dUx0S0pyOU9lWEhmaTFPdFpBWTcyUWphQ3N4eEdPN29MZE5mRkx3cUJ6Uk1Da0hZOFhOUlc5WWRFcE1leUVkQjVvYjY4Y1pockpfak1IRG1hT3FBTTc0WkhCUDRUYW1iQmdiU1ZDOU9Ick55LWtNSXZsNnNwLWdxWjdsM1hEakpCUXotQVNydGdkbjh0a1FNNjhOTzB2dkdtcmpxcDRpeGYxV3FqVXhjb2dNQkVMbV9iMExiSS1fX3ZSM2dHaVEyVHVabm9WX2dZR2dyNV9nYWVSVmhxMFJnSzNUX0tGaWJlZUF3aGdGN05qREpOY3dwNU9HXzRUdmdJQ1o5OHZRdFE1eThpeE93VDJDQkEyUF9XZzhTM0ZQWTRaejJpOFV1WTZZdnNjZG8yQlpVRVFUdE5LalVoQ1dvRlFtMzVHZGduS3UyM202MUJPY2tjcVZJa2tqNjhlWTVhZVZqOExpcFNrRC1ONU56QVFjNVhWMVZsNDJGeEZWV0l6WHc2YkVVR0ppc2QzbG44WWdreUhHMUpiZ00yMElPQkhXVWNIdm0tNExzVGwzaVNzZzhPTTlvTG1ucG5jT2x0NHFuZw?oc=5" target="_blank" class="rss-link">Search - South China Morning Post</a>
-                            </div>
-                        </div>
-                        <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">07-23 13:45</span><span class="rss-author">华尔街日报</span><span class="rss-author" style="color: #dc2626;">NEW</span>
-                            </div>
-                            <div class="rss-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOeHZTemJrZkItei1pTlJEakwxaWtKV2RuWExxcl8wOFBCQ2lXWWQzSVd3Wk5CcGZvaTVVeldielNDUXNBTnhVV3g2S29sRjc3ekozVUQyLTBtMm5pOUlGNHhTRlg1Yll4eUpLVV9RUWZXOXhXMXpuZUtIOE84bDh3TUlCYmhXMnU2VjdMNEJpS21NVzR6?oc=5" target="_blank" class="rss-link">中国车企欧洲6月销量激增 - 华尔街日报中文网</a>
                             </div>
                         </div>
                     </div>
