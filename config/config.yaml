@@ -39,8 +39,7 @@ rss:
     - id: "South China Morning Post"
       name: "南华早报"
       url: "https://news.google.com/rss/search?q=site:scmp.com&hl=zh-CN&gl=CN&ceid=US:en" 
-
-     # ===== 数据源：从哪些平台抓新闻 =====
+# ===== 数据源：从哪些平台抓新闻 =====
 platforms:
   enabled: true
   sources:
