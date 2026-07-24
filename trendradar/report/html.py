@@ -72,7 +72,7 @@ def render_html_content(
             }
 
             .container {
-                max-width: 600px;
+                max-width: 1800px;
                 margin: 0 auto;
                 background: white;
                 border-radius: 12px;
@@ -611,7 +611,7 @@ def render_html_content(
                 color: #374151;
             }
 
-            @media (max-width: 480px) {
+            @media (max-width: 1800px) {
                 body { padding: 12px; }
                 .header { padding: 24px 20px; }
                 .content { padding: 20px; }
@@ -664,11 +664,11 @@ def render_html_content(
             }
 
             .feed-group {
-                margin-bottom: 24px;
+                margin-bottom: 12px;
             }
 
             .feed-group:last-child {
-                margin-bottom: 0;
+                margin-bottom: 12px;
             }
 
             .feed-header {
@@ -891,17 +891,18 @@ def render_html_content(
             /* ===== 浏览器增强样式（渐进增强，邮件客户端无影响） ===== */
 
             /* 宽屏模式 - 基础 */
-            body.wide-mode .container { max-width: 1200px; }
+            body.wide-mode .container { max-width: 1800px; }
             body.wide-mode .header-info { grid-template-columns: repeat(4, 1fr); }
             body.wide-mode .content { padding: 32px 40px; }
 
             /* 宽屏模式 - RSS feed-group 两列 */
             body.wide-mode .rss-feeds-grid {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 24px;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 16px;
+                align-items: start;
             }
-            body.wide-mode .feed-group { margin-bottom: 0; }
+            body.wide-mode .feed-group { margin-bottom: 12px; }
 
             /* 宽屏模式 - AI 分析区两列网格 */
             body.wide-mode .ai-section .ai-blocks-grid {
