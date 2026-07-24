@@ -1,13 +1,18 @@
 # ===== 科技 =====
 # AI 人工智能 大模型
-  DeepSeek OpenAI ChatGPT Anthropic 英伟达 海力士 苹果 华为 
+  DeepSeek OpenAI ChatGPT 
+  英伟达 海力士 苹果 华为 
 # ===== 互联网 =====
 # 腾讯 阿里 字节 百度
 # ===== 财经 =====
-股市 A股 沪深 创业板 科创板 ETF
-# 新能源 电动车 比亚迪 鸿蒙智行
+  股市
+# 新能源 比亚迪 鸿蒙智行
 # ===== 社会热点 =====
 # 单独一个词也行，表示只要出现这个词就匹配
-China Chinese 中国 宁波
+China 
+Chinese 
+中国 
+宁波
+BREAKING
 # ===== 国际 =====
 # 美国 英国 亚洲 
