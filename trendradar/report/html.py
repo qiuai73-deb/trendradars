@@ -611,7 +611,7 @@ def render_html_content(
                 color: #374151;
             }
 
-            @media (max-width: 1800px) {
+            @media (max-width: 768px) {
                 body { padding: 12px; }
                 .header { padding: 24px 20px; }
                 .content { padding: 20px; }
