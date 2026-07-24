@@ -127,7 +127,7 @@ jobs:
       - name: Verify HTML generated
         if: success()
         run: |
-          if [ ! -f index.html ]; then
+          if [ ! -f output/html/latest/current.html ]; then
             echo "❌ 未找到 index.html，请确认爬虫已生成网页报告"
             exit 1
           fi
@@ -137,7 +137,7 @@ jobs:
         if: success()
         run: |
           mkdir -p pages-dist
-          cp index.html pages-dist/index.html
+          cp output/html/latest/current.html pages-dist/index.html
           echo "📦 已准备好部署文件"
 
       - name: Deploy to GitHub Pages
