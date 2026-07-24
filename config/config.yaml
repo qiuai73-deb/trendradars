@@ -116,7 +116,7 @@ notification:
 
 # ===== 数据存储 =====
 storage:
-  backend: "auto"                     # auto=自动选择（GitHub Actions时用R2远程存储）
+  backend: "local"                     # auto=自动选择（GitHub Actions时用R2远程存储）
   formats:
     sqlite: true                      # ✅ 数据库存储（必须开）
     txt: false                        # ❌ 不生成TXT
